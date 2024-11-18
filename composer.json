@@ -1,34 +1,35 @@
 {
-    "name": "paktdigital/focus-point-bundle",
+    "name": "itools/focus-point-bundle",
     "description": "Symfony bundle for third774's image focus, for image cropping based on a focus point.",
+    "license": "MIT",
     "type": "symfony-bundle",
     "authors": [
         {
-            "name": "Hugo Hulsebosch",
-            "email": "hugo.hulsebosch@wearejust.com"
+            "name": "Alex Krasnov",
+            "email": "alexi-tools.ru"
         }
     ],
     "require": {
-        "php": "^8.0",
-        "liip/imagine-bundle": "^2.0",
-        "symfony/asset": "^5.0",
-        "symfony/config": "^5.0",
-        "symfony/dependency-injection": "^5.0",
-        "symfony/form": "^5.0",
-        "symfony/options-resolver": "^5.0",
-        "vich/uploader-bundle": "^1.16"
+        "php": ">=8.2",
+        "liip/imagine-bundle": "2.*",
+        "symfony/asset": "6.*",
+        "symfony/config": "6.*",
+        "symfony/dependency-injection": "6.*",
+        "symfony/form": "6.*",
+        "symfony/options-resolver": "6.*",
+        "vich/uploader-bundle": "2.*"
     },
     "suggest": {
         "symfony/twig-bundle": "Allows usage of the focus point Twig extension."
     },
     "autoload": {
         "psr-4": {
-            "PaktDigital\\FocusPointBundle\\": "src/"
+            "ITools\\FocusPointBundle\\": "src/"
         }
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^2.16",
-        "phpstan/phpstan": "0.12.*"
+        "friendsofphp/php-cs-fixer": "^3.58",
+        "phpstan/phpstan": "2.0.*"
     },
     "scripts": {
         "fix-cs": "php vendor/bin/php-cs-fixer fix --diff",
